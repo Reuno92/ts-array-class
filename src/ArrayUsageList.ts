@@ -1,13 +1,13 @@
-export class RoomUsageList {
+export class UsageList {
 
-    public roomList : Array<RoomUsageList>
+    public array : Array<UsageList>
 
     constructor () {
-        this.roomList = new Array<RoomUsageList>();
+        this.array = new Array<UsageList>();
     }
 }
 
-export class SpecialObject<T> {
+export class InstanciatedArray<T> {
 
     public array : Array<T>
 
@@ -16,7 +16,7 @@ export class SpecialObject<T> {
     }
 
     public addItem(value: T): void {
-        this.array.push(value);
+        this.array.push( value );
     }
 
     public addItems(values: Array<T>): void {
